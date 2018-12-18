@@ -1,0 +1,56 @@
+html, body {
+    height: 100%
+}
+
+:host {
+    background: url("../../assets/bg.png") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.middle-right {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    /*transform: translateY(-50%);
+    display:block;
+    max-width:206px;
+    text-align:center;
+    padding: 0;
+    margin-left:-50%;*/
+}
+
+/*.rotated-text {
+    max-width: 206px;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    text-align: right;
+    vertical-align:top;
+}*/
+
+/*.rotated-text {
+    max-height: 250px;
+    writing-mode: vertical-rl;
+}*/
+
+.rotated-text {
+    max-height: 250px;
+    transform: rotate(90deg) translateX(50%);
+    transform-origin: right top;
+    text-align: right;
+    vertical-align: top;
+}
+
+.middle-bottom {
+    position: absolute;
+    right: 50%;
+    bottom: 0px;
+}
+
+.ui-float-label > label {
+    color: #000000;
+}

@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <p class="welcome-text center-text">Velkommen til Beerlabels!</p>
+        </div>
+        <div class="ui-g-12 x-spaceing">
+            <span class="ui-float-label">
+                <input [(ngModel)]="username" (keydown.enter)="login()" id="float-input-username" type="text" pInputText>
+                <label class="text-white" for="float-input-username">Brugernavn</label>
+            </span>
+        </div>
+        <div class="ui-g-12 x-spaceing">
+            <span class="ui-float-label">
+                <input [(ngModel)]="password" (keydown.enter)="login()" id="float-input-password" type="password" pInputText>
+                <label class="text-white" for="float-input-password">Password</label>
+            </span>
+        </div>
+        <div class="ui-g-12 x-spaceing">
+            <button pButton type="button" (click)="login()" label="Login" class="btn ui-button"></button>
+        </div>
+        <!--<div class="ui-g-6 x-spaceing">
+            <button pButton type="button" [routerLink]="['/public/registration']" label="{{ 'public.login.signUp' | translate }}" class="btn ui-button-secondary"></button>
+        </div>-->
+
+        <!--<div class="ui-g-12 x-spaceing">
+            <button pButton type="button" [routerLink]="['/app/support']" class="btn ui-button-secondary" label=" Support">
+                <i class="fas fa-comments" style="position: absolute;left: 37%;top: 32%;"></i>
+            </button>
+        </div>-->
+        <!--
+        <div class="ui-g-12 x-spaceing">
+            <button pButton type="button" [routerLink]="['/public/registration']" label="{{ 'public.login.demo' | translate }}" class="btn ui-button-warning"></button>
+        </div>
+        -->
+    </div>
+</div>
+<div class="ui-g-12 center-text" style="color:rgba(255, 255, 255, 0.50); font-size:12px; margin-bottom:10px; position:absolute; bottom:0;">© 2018 Beerlabel. All rights reserved</div>

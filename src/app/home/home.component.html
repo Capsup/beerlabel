@@ -1,0 +1,122 @@
+<div class="container content">
+    <!-- container centers content on large screens -->
+    <div class="ui-g">
+        <!-- responsive row has 12 columns by default -->
+        <div class="ui-g-12">
+            <div class="row">
+                <div class="ui-g-4">
+                    <h3>Værdier der kan indtastes</h3>
+                    <div style="margin:5px;">
+                        <span class="ui-float-label">
+                            <input id="float-input" type="text" size="30" pInputText [(ngModel)]="nameTextValue">
+                            <label for="float-input">Navn</label>
+                        </span>
+                    </div>
+                    <div style="margin: 20px 5px;">
+                        <span class="ui-float-label">
+                            <input id="float-input" type="text" size="30" pInputText [(ngModel)]="alcoholTextValue">
+                            <label for="float-input">Alkohol procent</label>
+                        </span>
+                    </div>
+                    <div style="margin: 20px 5px;">
+                        <span class="ui-float-label">
+                            <input id="float-input" type="text" size="30" pInputText [(ngModel)]="dateTextValue">
+                            <label for="float-input">Tappedato</label>
+                        </span>
+                    </div>
+                    <div style="margin: 20px 5px;">
+                        <span class="ui-float-label">
+                            <input id="float-input" type="text" size="30" pInputText [(ngModel)]="ingredientsTextValue">
+                            <label for="float-input">Ingredienser</label>
+                        </span>
+                    </div>
+                </div>
+                <div id="pdfContent" class="ui-g-8" style="position:relative;padding:0;max-width:600px;">
+                    <img src="/assets/label1.png" style="width:100%;position:relative;" />
+
+                    <div style="position:relative;width:100%;height:auto;">
+                        <div class="middle-bottom" style="font-size:4vw;transform: translate(50%);padding-bottom:20%;">
+                            {{nameTextValue}}
+                        </div>
+                    </div>
+                    <div style="position:relative;width:100%;height:auto;">
+                        <div class="middle-bottom" style="font-size:2vw;transform: translate(50%);padding-bottom:5%;">
+                            {{alcoholTextValue}}
+                        </div>
+                    </div>
+
+                    <div class="middle-right" style="font-size:2vw; transform:translateY(-50%)">
+                        <div class="rotated-text">
+                            Tappet den: {{dateTextValue}}
+                        </div>
+                    </div>
+
+                    <!--<div class="rotation-wrapper-outer">
+                        <div class="rotation-wrapper-inner">
+                            <div class="element-to-rotate">
+                                Tappet den: {{dateTextValue}}
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--<div class="middle-right" style="position:relative;transform:rotate(90deg)">
+                        Ingredienser: {{ingredientsTextValue}}
+                    </div>-->
+                    <div class="middle-right" style="font-size:2vw; right:15%; transform:translateY(-50%);">
+                        <div class="rotated-text">
+                            {{ingredientsTextValue}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- uses 6 columns on medium and larger screens... -->
+            <div class="row">
+                <div class="ui-g-6">
+                </div>
+                <div class="ui-g-6" style="margin-top:20px;">
+                    <p-button label="Lav PDF" (onClick)="captureScreen()"></p-button>
+                </div>
+
+            </div>
+
+            <!--
+            <div>
+                <h3>Værdier der kan indtastes</h3>
+                <div style="margin:5px;">
+                    <span class="ui-float-label">
+                        <input id="float-input" type="text" size="30" pInputText [(ngModel)]="nameTextValue">
+                        <label for="float-input">Navn</label>
+                    </span>
+                </div>
+                <div style="margin: 20px 5px;">
+                    <span class="ui-float-label">
+                        <input id="float-input" type="text" size="30" pInputText [(ngModel)]="alcoholTextValue">
+                        <label for="float-input">Alkohol procent</label>
+                    </span>
+                </div>
+                <div style="margin: 20px 5px;">
+                    <span class="ui-float-label">
+                        <input id="float-input" type="text" size="30" pInputText [(ngModel)]="dateTextValue">
+                        <label for="float-input">Tappe dato</label>
+                    </span>
+                </div>
+                <div style="margin: 20px 5px;">
+                    <span class="ui-float-label">
+                        <input id="float-input" type="text" size="30" pInputText [(ngModel)]="ingredientsTextValue">
+                        <label for="float-input">Ingredienser</label>
+                    </span>
+                </div>
+                <img style="position:absolute; top: 20px; left: 400px;" src="https://via.placeholder.com/500" />
+                <div style="position:absolute; top:350px; left: 650px;">
+                    {{nameTextValue}}
+                </div>
+                <div style="position:absolute; top:400px; left: 650px;">
+                    {{alcoholTextValue}}
+                </div>
+                <div style="position:absolute; top:250px; left: 920px; transform:rotate(90deg)">
+                    Tappet den: {{dateTextValue}}
+                </div>
+                <div style="position:absolute; top:250px; left: 825px; transform:rotate(90deg)">
+                    Ingredienser: {{ingredientsTextValue}}
+                </div>
+            </div>
+            -->

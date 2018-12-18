@@ -1,0 +1,58 @@
+:host {
+    background: url("/assets/bg.png") center center/cover no-repeat fixed;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media (min-width: 450px) {
+    .container {
+        padding-top: 150px;
+        width: 450px;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.x-spaceing {
+    padding-top: 20px;
+}
+
+.logo-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome-text {
+    color: #fff;
+    font-size: 20px;
+}
+
+.ui-inputtext {
+    width: 100%;
+    border-color: #fff;
+    color: #fff;
+    font-weight: 500;
+}
+
+    .ui-inputtext:enabled:hover:not(.ui-state-error) {
+        border-color: #fff !important;
+    }
+
+    .ui-inputtext:enabled:not(.ui-state-error) {
+        border-color: #fff !important;
+    }
+
+.btn {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+}
